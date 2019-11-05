@@ -7,9 +7,7 @@ Array rotation by 1
 12345
 51234
 *******************************************************************************/
-
 #include <iostream>
-
 using namespace std;
 
 void rotate(int arr[], int size){
@@ -20,8 +18,7 @@ void rotate(int arr[], int size){
     }
     arr[0]=temp;
 }
-
-void main()
+int main()
 {
     int arr[] = {1,2,3,4,5,6,7,8,9};
     int size = sizeof(arr)/sizeof(arr[0]);
@@ -30,4 +27,5 @@ void main()
     {
         cout << arr[i] << ",";
     }
+    return 0;
 }
