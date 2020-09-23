@@ -1,5 +1,5 @@
 # codePractice
-Repo to practice code
+Repo to practice code for C++ .
 “https://gitpod.io#”
 
 
