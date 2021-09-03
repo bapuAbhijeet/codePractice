@@ -1,16 +1,18 @@
 import java.util.Scanner;
 
-public class test_dipali
+public class TestCases
 {
+        private static final String	INDOOR = "INDOOR";
+	    private static final String	OUTDOOR = "OUTDOOR";
+	    private static final String CONGESTION_TRUE = "True";
+
         private boolean checkCongestion(String congestionValue)
         {
             return CONGESTION_TRUE.equals(congestionValue) ? true : false ;
         }
 
-    	private static final String	INDOOR = "INDOOR";
-	    private static final String	OUTDOOR = "OUTDOOR";
-	    private static final String CONGESTION_TRUE = "True";
-
+        public void main(String args[]) 
+        {
         //Get Value from GUI {"INDOOR","False","OUTDOOR","False","True"};
         int fwaSelfInd = 0;
 		int fwaTechInd = 1;
@@ -25,7 +27,6 @@ public class test_dipali
 
         boolean covInd = true ;
 
-        int (covInd)
         if ( fourGPlusInd > 0 && checkCongestion(congested4Gplus)) 
 		{
                 covInd = false;
@@ -58,5 +59,6 @@ public class test_dipali
         if (covInd)
         {
             System.out.println("Not blocked");
+        }
         }
 }
