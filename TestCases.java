@@ -6,19 +6,19 @@ public class TestCases
 	    private static final String	OUTDOOR = "OUTDOOR";
 	    private static final String CONGESTION_TRUE = "True";
 
-        private boolean checkCongestion(String congestionValue)
+        private static boolean checkCongestion(String congestionValue)
         {
             return CONGESTION_TRUE.equals(congestionValue) ? true : false ;
         }
 
-        public void main(String args[]) 
+        public static void main(String args[]) 
         {
         //Get Value from GUI {"INDOOR","False","OUTDOOR","False","True"};
-        int fwaSelfInd = 0;
+        int fwaSelfInd = 1;
 		int fwaTechInd = 1;
 		int fourGPlusInd = 0;
 
-        String [] networkParameterArray = {"INDOOR","False","OUTDOOR","False","True"};
+        String [] networkParameterArray = {"INDOOR","True","OUTDOOR","False","True"};
         String coverage5Gfast = networkParameterArray[0].toUpperCase();
 		String congested5Gfast = networkParameterArray[1];
 		String coverage5Gwide = networkParameterArray[2].toUpperCase();
